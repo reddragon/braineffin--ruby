@@ -120,13 +120,15 @@ class BFRuby
   def open_parantheses(i)
     if @mem[@mem_curptr].to_i == 0
       bracket = 1
-      for j in i + 1 .. @code.length - 1
+      j = i + 1
+      while j <= @code.length - 1
         bracket += case @code[j].chr
                         when '[' then 1
                         when ']' then -1
                         else 0
                    end
-        return j if (code[j] == ']' and bracket == 0)
+        return j if (@code[j] == ']' and bracket == 0)
+        j = j + 1
       end
     end
   end
