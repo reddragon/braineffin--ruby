@@ -1,4 +1,4 @@
-== Braineffin'-Ruby
+= Braineffin'-Ruby
 
 Classic implementation of a Brainf**k interpreter in Ruby.
 
@@ -9,6 +9,6 @@ Classic implementation of a Brainf**k interpreter in Ruby.
   ruby bf-ruby.rb bfcode.bf 2097152
 
 
-=== Author 
+== Author 
 
 Gaurav Menghani
